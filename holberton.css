@@ -1,0 +1,1418 @@
+body {
+  animation: reverse 0.5s ease-out;
+  color: #000000;
+} 
+
+@keyframes reverse {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+
+/* Dark mode */
+body.night {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.night a {
+  color: #ffffff;
+}
+
+body.night header nav .lemenu li a:hover {
+  cursor: pointer;
+  color: #5e29d9;
+}
+
+body.night .auto-reverse {
+  color: #ff0000;
+}
+
+body.night .sol {
+  color: #ff0000;
+}
+
+body.night .chapitre a.cv {
+  color: #ffffff;
+}
+
+body.night .droite {
+  line-height: 2;
+}
+
+body.night .qualification__country {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+body.night .qualification__year {
+  color: #ffffff;
+}
+body.night .reseaux .box a {
+  color: #ffffff;
+}
+body.night .credit {
+  background: none;
+}
+
+body.night .look div a {
+  color: #ffffff;
+}
+body.night .footer .box-container .box a {
+  color: #ffffff;
+}
+body.night header nav .lemenu li a {
+  color: #ffffff;
+}
+
+body.night .reseaux .box a:hover {
+  color: #5e29d9;
+}
+
+body.night .footer .box-container .box a:hover {
+  color: #892cdc;
+}
+
+
+body.night header .icons img {
+  color: #ffffff;
+}
+
+/* Dark mode */
+
+/* loader */
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lettre {
+  color: #484848;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+}
+@keyframes flash {
+  0% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900;
+  }
+}
+
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.lettre:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+} 
+
+/*Header section*/
+#holb{
+  width: 20%;
+  }
+
+header {
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+
+header nav {
+  
+    position: relative;
+    left: 7%;
+}
+
+span {
+  color: #5e29d9;
+}
+
+header nav .lemenu {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+header li a{
+  font-size: 20px;
+}
+
+header nav .lemenu li a {
+  color: #000000;
+  font-size: 25px;
+  transition: color 0.5s;
+}
+
+header nav .lemenu li a:hover {
+  cursor: pointer;
+  color: #5e29d9;
+}
+
+header label {
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  right: 43%;
+  top: 35px;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+header label::before {
+  position: absolute;
+  height: 19px;
+  width: 23px;
+  background-color: #000000;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 50%;
+  content: "";
+  margin-left: 2px;
+  top: 1px;
+}
+
+header label.active::before {
+  left: 18px;
+  background-color: #ffffff;
+}
+
+
+.icons{
+  bottom: 90%;
+      left: 8%;
+      position: relative;
+      padding-left: 90%;
+      display: none;
+}
+ .menu-burger {
+  width: 38%;
+} 
+/*Header section*/
+
+/*Accueil section*/
+
+.chapitre {
+   background-image: url(./img/planete.jpg); 
+     width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin:40px auto;
+  margin-bottom: 5%;
+}
+.chapitre h1 {
+  font-size: 55px;
+  line-height: 2;
+  margin-bottom: 32px;
+  margin-left: 4%;
+    color: #ffffff;
+}  
+.chap {
+  display: flex;
+  margin: 46px 55px;
+}
+.chapitre p {
+  font-size: 19px;
+  margin-bottom: 32px; 
+    color: #ffffff;
+  line-height: 1.5;
+  margin-left: 4%;
+}
+
+.chapitre a.cv {
+  width: 200px;
+  height: 60px;
+  font-size: 21px;
+  font-family: arial, sans-serif;
+  font-weight: 700;
+  position: relative;
+  
+  z-index: 0;
+  border: 1px solid #892cdc;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.cv::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #892cdc;
+  border-radius: 50% 50% 0% 0%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+a.cv:hover::before {
+  top: 0;
+  border-radius: 0;
+}
+
+/*Accueil section*/
+
+/*A Propos section*/
+
+.about {
+  padding: 40px;
+}
+
+.acc {
+  display: flex;
+  gap: 33px;
+  animation-duration: 5s;
+  animation-name: glissement;
+  animation-iteration-count: 4s;
+  animation-direction: alternate;
+}
+
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.acc .left {
+  border: 3px solid #5e29d9;
+  border-radius: 28px;
+  width: 100%;
+  margin: auto;
+  font-weight: bolder;
+}
+
+.left h3 {
+  text-align: center;
+  align-items: center;
+}
+.left p {
+  padding: 3%;
+  line-height: 1.3;
+  font-size: 20px;
+}
+
+.acc .right {
+  
+  width: 100%;
+}
+
+.right img {
+
+  border-radius: 28px;
+}
+
+#sud {
+  width: 100%;
+}
+
+
+/*A Propos section*/
+
+/* Loisirs section */
+
+.voyages {
+  display: flex;
+  margin: auto;
+}
+
+.activites img,
+.jeux img {
+  width: 150px;
+}
+
+.apt {
+  display: flex;
+  gap: 32px;
+}
+
+
+
+.look div {
+  text-align: end;
+  height: 210px;
+  border-radius: 10px;
+}
+
+h4 {
+  text-align: left;
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: medium;
+  text-shadow: #5e29d9 2px 0 5px;
+}
+
+.look div h4:hover {
+  text-align: center;
+  text-shadow: #5e29d9 1px 0 10px;
+  font-size: 20px;
+}
+.loisirs img {
+
+  border-radius: 25px;
+}
+
+#livre {
+  width: 600px;
+}
+#ldc {
+  width: 550px;
+}
+
+#netflix {
+  width: 380px;
+}
+
+#politique {
+  width: 300px;
+}
+
+#ile {
+  width: 300px;
+}
+
+#play{
+  width: 100%;
+}
+
+.apt div p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.look div a {
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: end;
+  margin-right: 13px;
+  color: #000000;
+}
+
+.look div a:hover {
+  border: 2px solid #5e29d9;
+  color: #ffffff;
+  font-weight: 700;
+  transform: translateY(-5px);
+  background-color: #5e29d9;
+}
+
+/* Loisirs section */
+
+/* Parcours section */
+
+.parcours {
+  margin-bottom: 5%;
+}
+
+.chemin {
+  display: flex;
+}
+
+.gauche {
+  margin-right: 20px;
+  width: 50%;
+  line-height: 5;
+}
+
+.gauche img {
+
+  border-radius: 28px;
+}
+.droite {
+  border: 3px solid #5e29d9;
+  border-radius: 28px;
+  padding: 8px 25px;
+  width: 47%;
+  
+}
+
+.droite .form {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.droite .qualification__info {
+  line-height: 1.3;
+}
+
+.droite .qualification__content {
+  line-height: 1.6;
+}
+.qualification__year,
+.qualification__country {
+  color: #000000;
+  margin: 7px 15px;
+}
+
+/* Projects section */
+
+
+.projets .row {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+.projets .row .image {
+  flex: 1 1 29rem;
+}
+
+.projets .row .content {
+  flex: 1 1 28rem;
+}
+
+.projets .row .content h3 {
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.projets .row .content p {
+  line-height: 2;
+  padding: 16px 0;
+  font-size: 25px;
+}
+
+.projets .row.revers {
+  flex-flow: row-reverse;
+  margin: 48px 0;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 20px;
+  border: 2px solid #5e29d9;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #5e29d9;
+  color: #29d9d5;
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.bbox {
+  width: 400px;
+  height: 160px;
+  background-color: #ffffff;
+  position: relative;
+  margin: auto;
+  margin-top: 6%;
+}
+
+.bbox::before,
+.bbox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #00f0f0,
+    #00ff00,
+    #0000ff,
+    #ff0000,
+    #00f0f0,
+    #00ff00,
+    #0000ff,
+    #f00f0f
+  );
+  width: 100%;
+  height: 100%;
+  transform: scale(1.02);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 20s infinite;
+}
+
+.bbox::after {
+  filter: blur(20px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bbox .sol {
+  padding: 44px 22px;
+  font-size: 21px;
+}
+/* Projects section */
+
+/* contact section */
+/*
+.contact .row form {
+  border-radius: 4px;
+  padding: 32px;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  margin-bottom: 16px;
+  border-radius: 20px;
+  padding: 19px;
+  background: #5e29d9;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.contact .row form .box {
+  padding: 16px 0;
+  margin: 16px 0;
+  font-size: 29px;
+  width: 100%;
+  border: 2px solid #5e29d9;
+}
+
+.contact .row form .box::placeholder {
+  color: rgba(220, 198, 156, 0.6);
+}
+
+.contact .row form textarea {
+  height: 240px;
+  resize: none;
+}
+
+#send {
+  margin: auto;
+  width: 33%;
+} */
+
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  padding-bottom: 60px;
+}
+
+.container .content{
+  text-align: center;
+}
+
+.container .content h3{
+  font-size: 30px;
+  color:#333;
+}
+
+.container .content h3 span{
+  background: crimson;
+  color:#fff;
+  border-radius: 5px;
+  padding:0 15px;
+}
+
+.container .content h1{
+  font-size: 50px;
+  color:#333;
+}
+
+.container .content h1 span{
+  color:crimson;
+}
+
+.container .content p{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn{
+  display: inline-block;
+  padding:10px 30px;
+  font-size: 20px;
+  background: #333;
+  color:#fff;
+  margin:0 5px;
+  text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+  background: crimson;
+}
+
+.form-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  padding-bottom: 60px;
+  background: #eee;
+}
+
+.form-container form{
+  padding:20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  background: #fff;
+  text-align: center;
+  width: 500px;
+}
+
+.form-container form h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+  width: 100%;
+  padding:10px 15px;
+  font-size: 17px;
+  margin:8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form select option{
+  background: #fff;
+}
+
+.form-container form .form-btn{
+  background: #fbd0d9;
+  color:crimson;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+  background: crimson;
+  color:#fff;
+}
+
+.form-container form p{
+  margin-top: 10px;
+  font-size: 20px;
+  color:#333;
+}
+
+.form-container form p a{
+  color:crimson;
+}
+
+.form-container form .error-msg{
+  margin:10px 0;
+  display: block;
+  background: crimson;
+  color:#fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding:10px;
+}
+img.small {
+  margin-left: 44%;
+  width: 100px;
+  border-radius: 20px;
+}
+
+/* contact section */
+
+/* Reseaux section */
+
+.reseaux {
+  margin-bottom: 7%;
+  margin-top: 5%;
+}
+
+.reseaux .box a {
+  font-size: 28px;
+  padding: 16px 0;
+  color: #000000;
+}
+
+.reseaux .box a:hover {
+  color: #5e29d9;
+}
+
+.reseaux .box:first-child i {
+  margin-right: 30px;
+}
+
+.reseaux .box:nth-child(2) {
+  text-align: center;
+}
+
+.reseaux .box:last-child {
+  text-align: center;
+}
+
+.reseaux .box:last-child i {
+  margin-left: 30px;
+}
+
+/* Reseaux section */
+
+/* Footer section */
+
+.footer .box-container {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 48px;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 29px;
+  padding: 16px 0;
+  color: #000000;
+}
+
+.footer .box-container .box a:hover {
+  color: #892cdc;
+}
+
+.footer .box-container .box:last-child {
+  text-align: center;
+}
+
+.footer .box-container .box:last-child i {
+  margin-left: 1.7rem;
+}
+
+.footer .credit {
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  background-color: #5e29d9;
+  font-size: 32px;
+}
+/* Footer section */
+
+/* Responsive*/
+  
+
+@media screen and (max-width : 1000px)
+{
+ 
+ 
+  header nav {
+   top: 2%;
+}
+
+header label {
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  right: 40%;
+  top: 39px;
+  border-radius: 20px;
+  border: 2px solid;
+  
+}
+ header .right  i{
+  float: none;
+  margin: 0 10px 15px;
+}
+
+}
+
+@media screen and (max-width: 991px) {
+
+  /* Header section */
+
+  header nav {
+    background: crimson;
+    position: fixed;
+    width: 100%;
+    height: 60vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -110%;
+    transition: all 0.5s;
+  }
+  .lemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+  }
+
+  .mobile-menu {
+    margin-left: -70px;
+  }
+  header label {
+    top: 2%;
+    margin-right: 6%;
+  }
+
+  header nav .lemenu li {
+    margin: 5px 0px;
+    font-size: 19px;
+    border: 2px solid #5e29d9;
+    padding: 3px 46px;
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  
+  .icons {
+   display: block;
+    top: -6px;
+    bottom: 90%;
+    left: 1%;
+    position: relative;
+    padding-left: 90%;
+     display: block;
+}
+  /* Accueil section */ 
+  .chapitre {
+    padding-top: -20%;
+    background-image: url(./img/planete.jpg);
+    width: 100%;
+    height: 663px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 41% auto;
+    margin-bottom: 5%;
+}
+  .chapitre h1 {
+    
+    text-align: center;
+  }
+
+  .chapitre p {
+    text-align: center;
+    font-size: 21px;
+  }
+
+ 
+  /* Header section */
+
+  /* A Propos section */
+   .acc {
+    display: block;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 25px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+  .acc .right {
+    margin: auto;
+    padding-top: 4%;
+    width: 71%;
+  }
+  /* A Propos section */
+
+  /* Loisirs section */
+   .apt {
+    flex-direction: row-reverse;
+  }
+  .look div a {
+    margin-right: 28%;
+  }
+  
+/* Loisirs section */
+
+  /* Parcours section */
+   .chemin {
+    display: block;
+  }
+
+  .gauche {
+    margin: auto;
+    padding-bottom: 3%;
+    width: 71%;
+  }
+
+  #formation{
+    display: none;
+  }
+  .droite {
+    
+    margin: auto;
+    width: 80%;
+  }
+  
+  /* Parcours section */
+
+  /* Projets section */
+    .projets .row {
+    text-align: center;
+    display: block;
+  }
+  .projets .row .image {
+    flex: 1 1 30rem;
+    width: 56%;
+    margin: auto;
+  }
+
+  .projets .row .image img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .content{
+    width: 81%;
+    margin: auto;
+  }
+
+  .projets .row .content h3 {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    margin-top: 5%;
+  }
+  .btn {
+    width: 56%;
+    margin: auto;
+  }
+  
+  /* projet section */
+
+  /* contact section */
+ 
+  #send {
+    width: 55%;
+  }
+    /* reseaux section */
+  .credit p {
+    text-align: left;
+  }
+
+ }
+
+ @media screen and (max-width: 800px) {
+  header nav {position: absolute;
+    background: crimson;
+    width: 100%;
+    height: 49vh;
+    top: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -110%;
+    transition: all 0.5s;
+}
+.icons {
+  top: 5%;
+  display: block;
+  left: 1%;
+  width: 97px;
+}
+
+.lemenu {
+  width: 150px;
+}
+
+.mobile-menu {
+  margin-left: -55px;
+}
+
+.chapitre {
+  padding-top: -20%;
+  top: 5%;
+  background-image: url(./img/planete.jpg);
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 41% auto;
+  margin-bottom: 5%;
+}
+.apt {
+  flex-direction: row-reverse;
+  margin-bottom: 4%;
+}
+ }
+
+
+@media screen and (max-width: 750px) {
+  header nav {
+    position: absolute;
+    height: 42vh;
+    top: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -110%;
+    transition: all 0.5s;
+}
+
+header nav .lemenu li {
+  margin: -36px 0px;
+  font-size: 19px;
+  border: 2px solid #5e29d9;
+  padding: 3px 46px;
+  width: 100%;
+  border-radius: 14px;
+}
+header nav .lemenu li a {
+  color: #000000;
+  transition: color 0.5s;
+}
+header li a{
+  margin: 0px 17px;
+}
+  .icons {
+    top: -85%;
+    
+    bottom: 90%;
+    left: 1%;
+    position: relative;
+    padding-left: 90%;
+    display: block;
+}
+  .acc {    animation-name: none;
+  }
+  .acc .left {
+    width: 100%;
+  }
+
+  .acc .right {
+    width: 100%;
+  }
+
+  .apt {
+      flex-direction: row-reverse;
+      margin-bottom: 4%;
+    animation-duration: 4s;
+    animation-name: whoosh;
+  }
+  @keyframes whoosh {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .gauche {
+    animation-duration: 5s;
+    animation-name: bingbong;
+  }
+  @keyframes bingbong {
+    from {
+      margin-left: 100%;
+      width: 80%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 80%;
+    }
+  }
+  .droite {
+  
+    border: 3px solid #29d9d5;
+  }
+  #fort{
+    display: none;
+  }
+  #formation {
+    display: block;
+  }
+  .reseaux .box a {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .box-container .box a {
+    text-align: center;
+  }
+} 
+
+@media screen and (max-width: 650px) {
+  .apt {
+
+
+  animation-duration: 4s;
+  animation-name: whoosh;
+  margin-bottom: 20%;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+
+  header label {
+    top: 1%;
+    margin-right: 5%;
+   
+}
+.icons {
+  width: 18%;
+  top: -77%;
+  left: -11%;
+  padding-left: 90%;
+  display: block;
+}
+
+.about {
+  padding: 40px;
+  margin-top: 17%;
+}
+
+#apt{
+  position: fixed;
+}
+.apt {
+  flex-direction: row-reverse;
+  margin-bottom: 26%;
+  
+
+
+    animation-duration: 4s;
+    animation-name: whoosh;
+
+
+}
+
+.look div a {
+  margin: auto;
+  border: 2px solid;
+    border-radius: 20px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: end;
+    color: #000000;
+
+}
+}
+
+
+@media screen and (max-width: 585px) {
+  .chapitre {
+    background-image: url(./img/planete.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 41% auto;
+    margin-bottom: 5%;
+}
+}
+
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: auto;
+  
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-menu {
+    margin-left: -27px;
+}
+  .icons {
+    display: block;
+  
+    bottom: 90%;
+    left: 1%;
+    position: relative;
+    padding-left: 90%;
+    display: block;
+}
+/* accueil section */
+
+.chapitre {
+  
+  background-image: url(./img/planete.jpg);
+  width: 100%;
+  height: 745px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 73% auto;
+  margin-bottom: 5%;
+}
+
+
+.chap {
+  margin: auto;
+  margin-bottom: 32%;
+  width: 100%;
+}
+
+/* a propos section */
+  .about {
+    margin-top: 24%;
+  } 
+  .acc .left {
+    width: 100%;
+    display: block;
+  }
+
+
+  .apt {
+    flex-direction: row-reverse;
+    margin-bottom: 56%;
+    animation-duration: 4s;
+    animation-name: whoosh;
+}
+ 
+@keyframes whoosh {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+  .look {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .look div a {
+    margin-right: 38%;
+  }
+
+  .look div {
+    
+    height: 210px;
+    border-radius: 10px;
+    
+}
+  .gauche {
+    margin: auto;
+    padding-bottom: 3%;
+    width: 80%;
+    margin-top: 100%;
+}
+.droite{
+  
+    border: 3px solid #29d9d5;
+    margin-bottom: 5%;
+}
+
+
+.projets{
+margin-top: 18%;
+}
+  .bbox {
+    width: 90%;
+    background-color: #5e29d9;
+    position: relative;
+    margin: auto;
+    margin-top: 12%;
+   
+  }
+
+  img.small {
+    width: 100px;
+    margin: auto;
+}
+
+
+ 
+}

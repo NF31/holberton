@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  animation: reverse 0.5s ease-out;
+  color: #000000;
+}
+
+
+/* Dark Mode */
+body.night {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.night .login-box p a {
+  color: #ffffff;
+}
+
+body.night header .right a i {
+  color: #ffffff;
+}
+
+body.night #return {
+  color: #ffffff;
+}
+
+body.night .ri-reply-line {
+  font-size: 28px;
+}
+
+/* Dark Mode */
+
+
+#return {
+  margin-left: 20%;
+}
+
+.ri-reply-line {
+  font-size: 28px;
+}
+
+header label {
+  position: absolute;
+  width: 45px;
+  height: 25px;
+  right: 43%;
+  top: 35px;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+header label::before {
+  position: absolute;
+  height: 19px;
+  width: 23px;
+  background-color: #000000;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 50%;
+  content: "";
+  margin-left: 2px;
+  top: 1px;
+}
+
+header label.active::before {
+  left: 18px;
+  background-color: #ffffff;
+}
+
+
+.login-box {
+  margin-top: 15%;
+  background: crimson;
+  padding: 30pw 120px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.logo {
+  margin-top: 6%;
+}
+
+.login-box h1 {
+  margin-bottom: 40px;
+}
+
+.login-box button {
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.login-box button:hover {
+  border: 2px solid #5e29d9;
+  color: #ffffff;
+  font-weight: 700;
+  transform: translateY(-5px);
+  background-color: #5e29d9;
+}
+
+
+.login-box button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.login-box hr {
+  border: 0;
+  height: 1px;
+  background: #c2c2c2;
+  margin: 5px;
+}
+
+.login-box span {
+  display: block;
+  width: 40px;
+  margin: auto;
+  background: #ffffff;
+  margin-top: -16px;
+  font-size: 14px;
+}
+
+.login-box input {
+  border-radius: 20px;
+  width: 80%;
+  border: 1px solid green;
+  outline: 0;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.login-box p a {
+  color: #000000;
+}
+
+
+
+footer {
+  text-align: center;
+  margin-top: 85%;
+}
+
+.footer .credit {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 48px;
+}
+
+footer a {
+  color: #F80002;
+}
